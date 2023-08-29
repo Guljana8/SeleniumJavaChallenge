@@ -127,7 +127,6 @@ public class PriceCalculator {
         newLabel.click();
         newLabel.clear();
         newLabel.sendKeys("T");
-        System.out.println("I sent T letter");
         //Verify Expected Results C
         //get the error message
         WebElement actualErrorMsg = driver.findElement(By.xpath("//p[text()=' This label is too short! ']"));
@@ -169,7 +168,6 @@ public class PriceCalculator {
         WebElement alloyEl = driver.findElement(By.xpath("(//div[@class='w-16'])[2]"));
         Actions action4=new Actions(driver);
         action4.moveToElement(alloyEl).perform();
-        System.out.println("I HOVER ROW");
         //Click on ‘Pencil’ icon
         WebElement pencilIcon = driver.findElement(By.xpath("(//i[@class='fas fa-pencil-alt'])[2]"));
         pencilIcon.click();
