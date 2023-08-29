@@ -56,11 +56,9 @@ public class PriceCalculator {
         label.sendKeys("Scrap surcharge");
         value.sendKeys("3.14");
         checkIcon.click();
-        System.out.println("I am verifying");
         //Verify that values always show 1 or 2 decimal digits
         String scapPrice="10.29";
         String expectedResultB = elementText.getText();
-        System.out.println("I am saving the text");
         Assert.assertEquals(scapPrice, expectedResultB);
         System.out.println("Values always show 1 or 2 decimal digits " + expectedResultB);
 
